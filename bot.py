@@ -1,3 +1,4 @@
+
 import os
 import time
 import shutil
@@ -20,9 +21,9 @@ from telegram.ext import (
     filters,
 )
 
-BOT_TOKEN = os.environ["8742162183:AAH8o_Ukjvtnic8mmIhUMtBc_6iwuUFqOYY"]
-ADMIN_ID = int(os.environ["6146027296"])
-NGROK_TOKEN = os.environ["3JDkuTVRkOBjmdxSxxS0TutPXKS_cF3wu3wdvh1U1cYa7pVc"]
+BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+ADMIN_ID = int(os.environ["ADMIN_ID"])
+NGROK_TOKEN = os.environ["NGROK_AUTHTOKEN"]
 
 PHP_PORT = int(os.getenv("PHP_PORT", "8080"))
 RENDER_PORT = int(os.getenv("PORT", "10000"))
